@@ -1,0 +1,5 @@
+[INFO ] 2018-04-04 14:48:36,907 org.springframework.context.support.ClassPathXmlApplicationContext     - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@16c0663d: startup date [Wed Apr 04 14:48:36 CST 2018]; root of context hierarchy
+ [INFO ] 2018-04-04 14:48:37,034 org.springframework.beans.factory.xml.XmlBeanDefinitionReader     - Loading XML bean definitions from class path resource [spring/applicationContext-dao.xml]
+ [INFO ] 2018-04-04 14:48:37,966 org.springframework.context.support.PropertySourcesPlaceholderConfigurer     - Loading properties file from class path resource [conf/db.properties]
+ [INFO ] 2018-04-04 14:48:40,226 com.alibaba.druid.pool.DruidDataSource     - {dataSource-1} inited
+ 

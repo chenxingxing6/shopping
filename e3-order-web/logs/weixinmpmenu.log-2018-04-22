@@ -1,0 +1,136 @@
+[INFO ] 2018-04-22 22:08:58,494 org.springframework.web.servlet.DispatcherServlet     - FrameworkServlet 'e3-order-web': initialization started
+ [INFO ] 2018-04-22 22:08:58,524 org.springframework.web.context.support.XmlWebApplicationContext     - Refreshing WebApplicationContext for namespace 'e3-order-web-servlet': startup date [Sun Apr 22 22:08:58 CST 2018]; root of context hierarchy
+ [INFO ] 2018-04-22 22:08:58,580 org.springframework.beans.factory.xml.XmlBeanDefinitionReader     - Loading XML bean definitions from class path resource [spring/springmvc.xml]
+ [ERROR] 2018-04-22 22:08:59,095 org.springframework.web.servlet.DispatcherServlet     - Context initialization failed
+ org.springframework.beans.factory.xml.XmlBeanDefinitionStoreException: Line 25 in XML document from class path resource [spring/springmvc.xml] is invalid; nested exception is org.xml.sax.SAXParseException; lineNumber: 25; columnNumber: 4; 元素类型 "mvc:interceptor" 必须后跟属性规范 ">" 或 "/>"。
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:399)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:336)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:304)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:181)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:217)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:188)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:125)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:94)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:129)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:609)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:510)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:668)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:682)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:553)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:494)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:136)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:160)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1280)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1193)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1088)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:5176)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5460)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.xml.sax.SAXParseException; lineNumber: 25; columnNumber: 4; 元素类型 "mvc:interceptor" 必须后跟属性规范 ">" 或 "/>"。
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:177)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1472)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.seekCloseOfStartTag(XMLDocumentFragmentScannerImpl.java:1394)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(XMLNSDocumentScannerImpl.java:242)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2784)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:112)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:841)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:770)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+	at org.springframework.beans.factory.xml.DefaultDocumentLoader.loadDocument(DefaultDocumentLoader.java:76)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadDocument(XmlBeanDefinitionReader.java:429)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:391)
+	... 29 more
+[INFO ] 2018-04-22 22:10:33,287 org.springframework.web.servlet.DispatcherServlet     - FrameworkServlet 'e3-order-web': initialization started
+ [INFO ] 2018-04-22 22:10:33,319 org.springframework.web.context.support.XmlWebApplicationContext     - Refreshing WebApplicationContext for namespace 'e3-order-web-servlet': startup date [Sun Apr 22 22:10:33 CST 2018]; root of context hierarchy
+ [INFO ] 2018-04-22 22:10:33,382 org.springframework.beans.factory.xml.XmlBeanDefinitionReader     - Loading XML bean definitions from class path resource [spring/springmvc.xml]
+ [INFO ] 2018-04-22 22:10:34,340 com.alibaba.dubbo.common.logger.LoggerFactory     - using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+ [INFO ] 2018-04-22 22:10:34,561 org.springframework.context.support.PropertySourcesPlaceholderConfigurer     - Loading properties file from class path resource [conf/resource.properties]
+ [INFO ] 2018-04-22 22:10:34,571 org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor     - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+ [INFO ] 2018-04-22 22:10:35,157 com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry     -  [DUBBO] Load registry store file C:\Users\cxx\.dubbo\dubbo-registry-115.159.126.205.cache, data: {cn.e3mall.sso.service.TokenService=empty://192.168.25.1/cn.e3mall.sso.service.TokenService?application=e3-cart-web&category=configurators&dubbo=2.5.3&interface=cn.e3mall.sso.service.TokenService&methods=getUserByToken&pid=17096&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1524399351057 empty://192.168.25.1/cn.e3mall.sso.service.TokenService?application=e3-cart-web&category=routers&dubbo=2.5.3&interface=cn.e3mall.sso.service.TokenService&methods=getUserByToken&pid=17096&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1524399351057 dubbo://192.168.25.1:20883/cn.e3mall.sso.service.TokenService?anyhost=true&application=e3-sso&dubbo=2.5.3&interface=cn.e3mall.sso.service.TokenService&methods=getUserByToken&pid=6160&side=provider&timeout=600000&timestamp=1524399214550, cn.e3mall.service.ItemService=empty://192.168.25.1/cn.e3mall.service.ItemService?application=e3-cart-web&category=configurators&dubbo=2.5.3&interface=cn.e3mall.service.ItemService&methods=reshelfItem,getItemList,addItem,delItem,instockItem,getItemById,updateItem,getItemDescById&pid=17096&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1524399339307 empty://192.168.25.1/cn.e3mall.service.ItemService?application=e3-cart-web&category=routers&dubbo=2.5.3&interface=cn.e3mall.service.ItemService&methods=reshelfItem,getItemList,addItem,delItem,instockItem,getItemById,updateItem,getItemDescById&pid=17096&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1524399339307 dubbo://192.168.25.1:20880/cn.e3mall.service.ItemService?anyhost=true&application=e3-manager&dubbo=2.5.3&interface=cn.e3mall.service.ItemService&methods=reshelfItem,addItem,getItemList,delItem,instockItem,getItemById,updateItem,getItemDescById&pid=9320&side=provider&timeout=600000&timestamp=1524399184138, cn.e3mall.sso.service.RegisterService=empty://192.168.25.1/cn.e3mall.sso.service.RegisterService?application=e3-sso-web&category=configurators&dubbo=2.5.3&interface=cn.e3mall.sso.service.RegisterService&methods=checkData,register&pid=15216&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1524386328866 empty://192.168.25.1/cn.e3mall.sso.service.RegisterService?application=e3-sso-web&category=routers&dubbo=2.5.3&interface=cn.e3mall.sso.service.RegisterService&methods=checkData,register&pid=15216&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1524386328866 dubbo://192.168.25.1:20883/cn.e3mall.sso.service.RegisterService?anyhost=true&application=e3-sso&dubbo=2.5.3&interface=cn.e3mall.sso.service.RegisterService&methods=checkData,register&pid=6160&side=provider&timeout=600000&timestamp=1524399214060 dubbo://192.168.25.1:20883/cn.e3mall.sso.service.RegisterService?anyhost=true&application=e3-sso&dubbo=2.5.3&interface=cn.e3mall.sso.service.RegisterService&methods=checkData,register&pid=908&side=provider&timeout=600000&timestamp=1524384554780, cn.e3mall.search.service.SearchItemService=empty://192.168.25.1:20882/cn.e3mall.search.service.SearchItemService?anyhost=true&application=e3-search&category=configurators&check=false&dubbo=2.5.3&interface=cn.e3mall.search.service.SearchItemService&methods=importAllItems&pid=1252&side=provider&timeout=600000&timestamp=1524382757783, cn.e3mall.content.service.ContentService=empty://192.168.25.1:20881/cn.e3mall.content.service.ContentService?anyhost=true&application=e3-content&category=configurators&check=false&dubbo=2.5.3&interface=cn.e3mall.content.service.ContentService&methods=delContent,getContentListByCid,getContentList,addContent,updateContent&pid=16748&side=provider&timeout=600000&timestamp=1524399224158, cn.e3mall.search.service.SearchService=empty://192.168.25.1/cn.e3mall.search.service.SearchService?application=e3-search-web&category=configurators&dubbo=2.5.3&interface=cn.e3mall.search.service.SearchService&methods=search&pid=5648&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1524399406648 empty://192.168.25.1/cn.e3mall.search.service.SearchService?application=e3-search-web&category=routers&dubbo=2.5.3&interface=cn.e3mall.search.service.SearchService&methods=search&pid=5648&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1524399406648 dubbo://192.168.25.1:20882/cn.e3mall.search.service.SearchService?anyhost=true&application=e3-search&dubbo=2.5.3&interface=cn.e3mall.search.service.SearchService&methods=search&pid=17020&side=provider&timeout=600000&timestamp=1524398997736, cn.e3mall.content.service.ContentCategoryService=empty://192.168.25.1:20881/cn.e3mall.content.service.ContentCategoryService?anyhost=true&application=e3-content&category=configurators&check=false&dubbo=2.5.3&interface=cn.e3mall.content.service.ContentCategoryService&methods=addContentCategory,deleteContentCategory,updateContentCategory,getContentCatList&pid=16748&side=provider&timeout=600000&timestamp=1524399213243, cn.e3mall.sso.service.LoginService=empty://192.168.25.1/cn.e3mall.sso.service.LoginService?application=e3-sso-web&category=configurators&dubbo=2.5.3&interface=cn.e3mall.sso.service.LoginService&methods=userLogin&pid=15216&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1524386326758 empty://192.168.25.1/cn.e3mall.sso.service.LoginService?application=e3-sso-web&category=routers&dubbo=2.5.3&interface=cn.e3mall.sso.service.LoginService&methods=userLogin&pid=15216&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1524386326758 dubbo://192.168.25.1:20883/cn.e3mall.sso.service.LoginService?anyhost=true&application=e3-sso&dubbo=2.5.3&interface=cn.e3mall.sso.service.LoginService&methods=userLogin&pid=6160&side=provider&timeout=600000&timestamp=1524399203508 dubbo://192.168.25.1:20883/cn.e3mall.sso.service.LoginService?anyhost=true&application=e3-sso&dubbo=2.5.3&interface=cn.e3mall.sso.service.LoginService&methods=userLogin&pid=908&side=provider&timeout=600000&timestamp=1524384553152, cn.e3mall.cart.service.CartService=empty://192.168.25.1/cn.e3mall.cart.service.CartService?application=e3-cart-web&category=configurators&dubbo=2.5.3&interface=cn.e3mall.cart.service.CartService&methods=addCart,mergeCart,updateCartNum,deleteCartItem,getCartList&pid=17096&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1524399349866 empty://192.168.25.1/cn.e3mall.cart.service.CartService?application=e3-cart-web&category=routers&dubbo=2.5.3&interface=cn.e3mall.cart.service.CartService&methods=addCart,mergeCart,updateCartNum,deleteCartItem,getCartList&pid=17096&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1524399349866 dubbo://192.168.25.1:20884/cn.e3mall.cart.service.CartService?anyhost=true&application=e3-cart&dubbo=2.5.3&interface=cn.e3mall.cart.service.CartService&methods=addCart,mergeCart,updateCartNum,getCartList,deleteCartItem&pid=10612&side=provider&timeout=600000&timestamp=1524399151924, cn.e3mall.service.ItemCatService=empty://192.168.25.1:20880/cn.e3mall.service.ItemCatService?anyhost=true&application=e3-manager&category=configurators&check=false&dubbo=2.5.3&interface=cn.e3mall.service.ItemCatService&methods=getItemCatlist&pid=8832&side=provider&timeout=600000&timestamp=1524384540490}, dubbo version: 2.5.3, current host: 127.0.0.1
+ [INFO ] 2018-04-22 22:10:35,188     org.I0Itec.zkclient.ZkEventThread     - Starting ZkClient event thread.
+ [INFO ] 2018-04-22 22:10:35,220        org.apache.zookeeper.ZooKeeper     - Client environment:zookeeper.version=3.4.7-1713338, built on 11/09/2015 04:32 GMT
+ [INFO ] 2018-04-22 22:10:35,220        org.apache.zookeeper.ZooKeeper     - Client environment:host.name=cxx
+ [INFO ] 2018-04-22 22:10:35,221        org.apache.zookeeper.ZooKeeper     - Client environment:java.version=1.8.0_151
+ [INFO ] 2018-04-22 22:10:35,221        org.apache.zookeeper.ZooKeeper     - Client environment:java.vendor=Oracle Corporation
+ [INFO ] 2018-04-22 22:10:35,221        org.apache.zookeeper.ZooKeeper     - Client environment:java.home=C:\Program Files (x86)\Java\jdk1.8.0_151\jre
+ [INFO ] 2018-04-22 22:10:35,221        org.apache.zookeeper.ZooKeeper     - Client environment:java.class.path=D:\apache-maven-3.3.9\boot\plexus-classworlds-2.5.2.jar
+ [INFO ] 2018-04-22 22:10:35,221        org.apache.zookeeper.ZooKeeper     - Client environment:java.library.path=C:\Program Files (x86)\Java\jdk1.8.0_151\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files (x86)/Java/jdk1.8.0_151/bin/../jre/bin/server;C:/Program Files (x86)/Java/jdk1.8.0_151/bin/../jre/bin;C:/Program Files (x86)/Java/jdk1.8.0_151/bin/../jre/lib/amd64;C:\Python\Scripts\;C:\Python\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Java\jdk1.8.0_151\bin;C:\Program Files (x86)\Java\jdk1.8.0_151\jre\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\apache-maven-3.3.9\bin;E:\hadoop-2.8.3\bin;E:\hadoop-2.8.3\sbin;C:\Program Files (x86)\scala\bin;C:\Program Files (x86)\scala\bin;C:\Users\cxx\Desktop\spark\spark-2.3.0-bin-hadoop2.7\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Users\cxx\AppData\Local\Microsoft\WindowsApps;D:\eclipse;;.
+ [INFO ] 2018-04-22 22:10:35,222        org.apache.zookeeper.ZooKeeper     - Client environment:java.io.tmpdir=C:\Users\cxx\AppData\Local\Temp\
+ [INFO ] 2018-04-22 22:10:35,222        org.apache.zookeeper.ZooKeeper     - Client environment:java.compiler=<NA>
+ [INFO ] 2018-04-22 22:10:35,222        org.apache.zookeeper.ZooKeeper     - Client environment:os.name=Windows 10
+ [INFO ] 2018-04-22 22:10:35,222        org.apache.zookeeper.ZooKeeper     - Client environment:os.arch=amd64
+ [INFO ] 2018-04-22 22:10:35,222        org.apache.zookeeper.ZooKeeper     - Client environment:os.version=10.0
+ [INFO ] 2018-04-22 22:10:35,222        org.apache.zookeeper.ZooKeeper     - Client environment:user.name=cxx
+ [INFO ] 2018-04-22 22:10:35,223        org.apache.zookeeper.ZooKeeper     - Client environment:user.home=C:\Users\cxx
+ [INFO ] 2018-04-22 22:10:35,223        org.apache.zookeeper.ZooKeeper     - Client environment:user.dir=E:\eclipse\workplace\e3-order-web
+ [INFO ] 2018-04-22 22:10:35,225        org.apache.zookeeper.ZooKeeper     - Initiating client connection, connectString=115.159.126.205:2181 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@e31da7d
+ [INFO ] 2018-04-22 22:10:35,313       org.apache.zookeeper.ClientCnxn     - Opening socket connection to server 115.159.126.205/115.159.126.205:2181. Will not attempt to authenticate using SASL (unknown error)
+ [WARN ] 2018-04-22 22:10:35,323       org.apache.zookeeper.ClientCnxn     - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+ java.net.NoRouteToHostException: No route to host: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+[INFO ] 2018-04-22 22:10:36,434       org.apache.zookeeper.ClientCnxn     - Opening socket connection to server 115.159.126.205/115.159.126.205:2181. Will not attempt to authenticate using SASL (unknown error)
+ [WARN ] 2018-04-22 22:10:36,434       org.apache.zookeeper.ClientCnxn     - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+ java.net.NoRouteToHostException: No route to host: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+[INFO ] 2018-04-22 22:10:37,547       org.apache.zookeeper.ClientCnxn     - Opening socket connection to server 115.159.126.205/115.159.126.205:2181. Will not attempt to authenticate using SASL (unknown error)
+ [WARN ] 2018-04-22 22:10:37,548       org.apache.zookeeper.ClientCnxn     - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+ java.net.NoRouteToHostException: No route to host: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+[INFO ] 2018-04-22 22:10:38,663       org.apache.zookeeper.ClientCnxn     - Opening socket connection to server 115.159.126.205/115.159.126.205:2181. Will not attempt to authenticate using SASL (unknown error)
+ [WARN ] 2018-04-22 22:10:38,664       org.apache.zookeeper.ClientCnxn     - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+ java.net.NoRouteToHostException: No route to host: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+[INFO ] 2018-04-22 22:10:39,777       org.apache.zookeeper.ClientCnxn     - Opening socket connection to server 115.159.126.205/115.159.126.205:2181. Will not attempt to authenticate using SASL (unknown error)
+ [WARN ] 2018-04-22 22:10:39,778       org.apache.zookeeper.ClientCnxn     - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+ java.net.NoRouteToHostException: No route to host: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+[INFO ] 2018-04-22 22:10:40,888       org.apache.zookeeper.ClientCnxn     - Opening socket connection to server 115.159.126.205/115.159.126.205:2181. Will not attempt to authenticate using SASL (unknown error)
+ [WARN ] 2018-04-22 22:10:40,889       org.apache.zookeeper.ClientCnxn     - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+ java.net.NoRouteToHostException: No route to host: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+[INFO ] 2018-04-22 22:10:42,000       org.apache.zookeeper.ClientCnxn     - Opening socket connection to server 115.159.126.205/115.159.126.205:2181. Will not attempt to authenticate using SASL (unknown error)
+ [WARN ] 2018-04-22 22:10:42,001       org.apache.zookeeper.ClientCnxn     - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+ java.net.NoRouteToHostException: No route to host: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+[INFO ] 2018-04-22 22:10:43,112       org.apache.zookeeper.ClientCnxn     - Opening socket connection to server 115.159.126.205/115.159.126.205:2181. Will not attempt to authenticate using SASL (unknown error)
+ [WARN ] 2018-04-22 22:10:43,114       org.apache.zookeeper.ClientCnxn     - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+ java.net.NoRouteToHostException: No route to host: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)

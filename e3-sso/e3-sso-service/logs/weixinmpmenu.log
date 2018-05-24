@@ -1,0 +1,345 @@
+[INFO ] 2018-04-23 08:55:42,893 org.springframework.context.support.ClassPathXmlApplicationContext     - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@28f67ac7: startup date [Mon Apr 23 08:55:42 CST 2018]; root of context hierarchy
+ [INFO ] 2018-04-23 08:55:42,997 org.springframework.beans.factory.xml.XmlBeanDefinitionReader     - Loading XML bean definitions from file [E:\eclipse\workplace\e3-sso\e3-sso-service\target\classes\spring\applicationContext-dao.xml]
+ [INFO ] 2018-04-23 08:55:43,252 org.springframework.beans.factory.xml.XmlBeanDefinitionReader     - Loading XML bean definitions from file [E:\eclipse\workplace\e3-sso\e3-sso-service\target\classes\spring\applicationContext-redis.xml]
+ [INFO ] 2018-04-23 08:55:43,293 org.springframework.beans.factory.xml.XmlBeanDefinitionReader     - Loading XML bean definitions from file [E:\eclipse\workplace\e3-sso\e3-sso-service\target\classes\spring\applicationContext-service.xml]
+ [INFO ] 2018-04-23 08:55:43,658 com.alibaba.dubbo.common.logger.LoggerFactory     - using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+ [INFO ] 2018-04-23 08:55:43,705 org.springframework.beans.factory.xml.XmlBeanDefinitionReader     - Loading XML bean definitions from file [E:\eclipse\workplace\e3-sso\e3-sso-service\target\classes\spring\applicationContext-trans.xml]
+ [INFO ] 2018-04-23 08:55:44,181 org.springframework.context.support.PropertySourcesPlaceholderConfigurer     - Loading properties file from file [E:\eclipse\workplace\e3-sso\e3-sso-service\target\classes\conf\db.properties]
+ [INFO ] 2018-04-23 08:55:44,183 org.springframework.context.support.PropertySourcesPlaceholderConfigurer     - Loading properties file from file [E:\eclipse\workplace\e3-sso\e3-sso-service\target\classes\conf\resource.properties]
+ [INFO ] 2018-04-23 08:55:46,842 com.alibaba.dubbo.config.AbstractConfig     -  [DUBBO] The service ready on spring started. service: cn.e3mall.sso.service.LoginService, dubbo version: 2.5.3, current host: 127.0.0.1
+ [INFO ] 2018-04-23 08:55:47,105 com.alibaba.dubbo.config.AbstractConfig     -  [DUBBO] Export dubbo service cn.e3mall.sso.service.LoginService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+ [INFO ] 2018-04-23 08:55:47,106 com.alibaba.dubbo.config.AbstractConfig     -  [DUBBO] Export dubbo service cn.e3mall.sso.service.LoginService to url dubbo://192.168.25.1:20883/cn.e3mall.sso.service.LoginService?anyhost=true&application=e3-sso&dubbo=2.5.3&interface=cn.e3mall.sso.service.LoginService&methods=userLogin&pid=6064&side=provider&timeout=600000&timestamp=1524444946883, dubbo version: 2.5.3, current host: 127.0.0.1
+ [INFO ] 2018-04-23 08:55:47,106 com.alibaba.dubbo.config.AbstractConfig     -  [DUBBO] Register dubbo service cn.e3mall.sso.service.LoginService url dubbo://192.168.25.1:20883/cn.e3mall.sso.service.LoginService?anyhost=true&application=e3-sso&dubbo=2.5.3&interface=cn.e3mall.sso.service.LoginService&methods=userLogin&pid=6064&side=provider&timeout=600000&timestamp=1524444946883 to registry registry://115.159.126.205:2181/com.alibaba.dubbo.registry.RegistryService?application=e3-sso&dubbo=2.5.3&pid=6064&registry=zookeeper&timestamp=1524444946859, dubbo version: 2.5.3, current host: 127.0.0.1
+ [INFO ] 2018-04-23 08:55:47,964 com.alibaba.dubbo.remoting.transport.AbstractServer     -  [DUBBO] Start NettyServer bind /0.0.0.0:20883, export /192.168.25.1:20883, dubbo version: 2.5.3, current host: 127.0.0.1
+ [INFO ] 2018-04-23 08:55:47,996 com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry     -  [DUBBO] Load registry store file C:\Users\cxx\.dubbo\dubbo-registry-115.159.126.205.cache, data: {cn.e3mall.sso.service.TokenService=empty://192.168.25.1/cn.e3mall.sso.service.TokenService?application=e3-cart-web&category=configurators&dubbo=2.5.3&interface=cn.e3mall.sso.service.TokenService&methods=getUserByToken&pid=17096&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1524399351057 empty://192.168.25.1/cn.e3mall.sso.service.TokenService?application=e3-cart-web&category=routers&dubbo=2.5.3&interface=cn.e3mall.sso.service.TokenService&methods=getUserByToken&pid=17096&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1524399351057 dubbo://192.168.25.1:20883/cn.e3mall.sso.service.TokenService?anyhost=true&application=e3-sso&dubbo=2.5.3&interface=cn.e3mall.sso.service.TokenService&methods=getUserByToken&pid=6160&side=provider&timeout=600000&timestamp=1524399214550, cn.e3mall.service.ItemService=empty://192.168.25.1/cn.e3mall.service.ItemService?application=e3-cart-web&category=configurators&dubbo=2.5.3&interface=cn.e3mall.service.ItemService&methods=reshelfItem,getItemList,addItem,delItem,instockItem,getItemById,updateItem,getItemDescById&pid=17096&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1524399339307 empty://192.168.25.1/cn.e3mall.service.ItemService?application=e3-cart-web&category=routers&dubbo=2.5.3&interface=cn.e3mall.service.ItemService&methods=reshelfItem,getItemList,addItem,delItem,instockItem,getItemById,updateItem,getItemDescById&pid=17096&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1524399339307 dubbo://192.168.25.1:20880/cn.e3mall.service.ItemService?anyhost=true&application=e3-manager&dubbo=2.5.3&interface=cn.e3mall.service.ItemService&methods=reshelfItem,addItem,getItemList,delItem,instockItem,getItemById,updateItem,getItemDescById&pid=9320&side=provider&timeout=600000&timestamp=1524399184138, cn.e3mall.order.service.OrderService=empty://192.168.25.1:20885/cn.e3mall.order.service.OrderService?anyhost=true&application=e3-order&category=configurators&check=false&dubbo=2.5.3&interface=cn.e3mall.order.service.OrderService&methods=createOrder&pid=5756&side=provider&timeout=600000&timestamp=1524444840723, cn.e3mall.sso.service.RegisterService=empty://192.168.25.1/cn.e3mall.sso.service.RegisterService?application=e3-sso-web&category=configurators&dubbo=2.5.3&interface=cn.e3mall.sso.service.RegisterService&methods=checkData,register&pid=15216&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1524386328866 empty://192.168.25.1/cn.e3mall.sso.service.RegisterService?application=e3-sso-web&category=routers&dubbo=2.5.3&interface=cn.e3mall.sso.service.RegisterService&methods=checkData,register&pid=15216&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1524386328866 dubbo://192.168.25.1:20883/cn.e3mall.sso.service.RegisterService?anyhost=true&application=e3-sso&dubbo=2.5.3&interface=cn.e3mall.sso.service.RegisterService&methods=checkData,register&pid=6160&side=provider&timeout=600000&timestamp=1524399214060 dubbo://192.168.25.1:20883/cn.e3mall.sso.service.RegisterService?anyhost=true&application=e3-sso&dubbo=2.5.3&interface=cn.e3mall.sso.service.RegisterService&methods=checkData,register&pid=908&side=provider&timeout=600000&timestamp=1524384554780, cn.e3mall.search.service.SearchItemService=empty://192.168.25.1:20882/cn.e3mall.search.service.SearchItemService?anyhost=true&application=e3-search&category=configurators&check=false&dubbo=2.5.3&interface=cn.e3mall.search.service.SearchItemService&methods=importAllItems&pid=1252&side=provider&timeout=600000&timestamp=1524382757783, cn.e3mall.content.service.ContentService=empty://192.168.25.1:20881/cn.e3mall.content.service.ContentService?anyhost=true&application=e3-content&category=configurators&check=false&dubbo=2.5.3&interface=cn.e3mall.content.service.ContentService&methods=delContent,getContentListByCid,getContentList,addContent,updateContent&pid=16748&side=provider&timeout=600000&timestamp=1524399224158, cn.e3mall.search.service.SearchService=empty://192.168.25.1/cn.e3mall.search.service.SearchService?application=e3-search-web&category=configurators&dubbo=2.5.3&interface=cn.e3mall.search.service.SearchService&methods=search&pid=5648&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1524399406648 empty://192.168.25.1/cn.e3mall.search.service.SearchService?application=e3-search-web&category=routers&dubbo=2.5.3&interface=cn.e3mall.search.service.SearchService&methods=search&pid=5648&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1524399406648 dubbo://192.168.25.1:20882/cn.e3mall.search.service.SearchService?anyhost=true&application=e3-search&dubbo=2.5.3&interface=cn.e3mall.search.service.SearchService&methods=search&pid=17020&side=provider&timeout=600000&timestamp=1524398997736, cn.e3mall.content.service.ContentCategoryService=empty://192.168.25.1:20881/cn.e3mall.content.service.ContentCategoryService?anyhost=true&application=e3-content&category=configurators&check=false&dubbo=2.5.3&interface=cn.e3mall.content.service.ContentCategoryService&methods=addContentCategory,deleteContentCategory,updateContentCategory,getContentCatList&pid=16748&side=provider&timeout=600000&timestamp=1524399213243, cn.e3mall.sso.service.LoginService=empty://192.168.25.1/cn.e3mall.sso.service.LoginService?application=e3-sso-web&category=configurators&dubbo=2.5.3&interface=cn.e3mall.sso.service.LoginService&methods=userLogin&pid=15216&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1524386326758 empty://192.168.25.1/cn.e3mall.sso.service.LoginService?application=e3-sso-web&category=routers&dubbo=2.5.3&interface=cn.e3mall.sso.service.LoginService&methods=userLogin&pid=15216&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1524386326758 dubbo://192.168.25.1:20883/cn.e3mall.sso.service.LoginService?anyhost=true&application=e3-sso&dubbo=2.5.3&interface=cn.e3mall.sso.service.LoginService&methods=userLogin&pid=6160&side=provider&timeout=600000&timestamp=1524399203508 dubbo://192.168.25.1:20883/cn.e3mall.sso.service.LoginService?anyhost=true&application=e3-sso&dubbo=2.5.3&interface=cn.e3mall.sso.service.LoginService&methods=userLogin&pid=908&side=provider&timeout=600000&timestamp=1524384553152, cn.e3mall.cart.service.CartService=empty://192.168.25.1/cn.e3mall.cart.service.CartService?application=e3-order-web&category=configurators&dubbo=2.5.3&interface=cn.e3mall.cart.service.CartService&methods=addCart,mergeCart,updateCartNum,getCartList,clearCartItem,deleteCartItem&pid=11176&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1524444894021 empty://192.168.25.1/cn.e3mall.cart.service.CartService?application=e3-order-web&category=routers&dubbo=2.5.3&interface=cn.e3mall.cart.service.CartService&methods=addCart,mergeCart,updateCartNum,getCartList,clearCartItem,deleteCartItem&pid=11176&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1524444894021 empty://192.168.25.1/cn.e3mall.cart.service.CartService?application=e3-order-web&category=providers&dubbo=2.5.3&interface=cn.e3mall.cart.service.CartService&methods=addCart,mergeCart,updateCartNum,getCartList,clearCartItem,deleteCartItem&pid=11176&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1524444894021, cn.e3mall.service.ItemCatService=empty://192.168.25.1:20880/cn.e3mall.service.ItemCatService?anyhost=true&application=e3-manager&category=configurators&check=false&dubbo=2.5.3&interface=cn.e3mall.service.ItemCatService&methods=getItemCatlist&pid=8832&side=provider&timeout=600000&timestamp=1524384540490}, dubbo version: 2.5.3, current host: 127.0.0.1
+ [INFO ] 2018-04-23 08:55:48,014     org.I0Itec.zkclient.ZkEventThread     - Starting ZkClient event thread.
+ [INFO ] 2018-04-23 08:55:57,106        org.apache.zookeeper.ZooKeeper     - Client environment:zookeeper.version=3.4.7-1713338, built on 11/09/2015 04:32 GMT
+ [INFO ] 2018-04-23 08:55:57,107        org.apache.zookeeper.ZooKeeper     - Client environment:host.name=cxx
+ [INFO ] 2018-04-23 08:55:57,108        org.apache.zookeeper.ZooKeeper     - Client environment:java.version=1.8.0_151
+ [INFO ] 2018-04-23 08:55:57,108        org.apache.zookeeper.ZooKeeper     - Client environment:java.vendor=Oracle Corporation
+ [INFO ] 2018-04-23 08:55:57,108        org.apache.zookeeper.ZooKeeper     - Client environment:java.home=C:\Program Files (x86)\Java\jdk1.8.0_151\jre
+ [INFO ] 2018-04-23 08:55:57,108        org.apache.zookeeper.ZooKeeper     - Client environment:java.class.path=E:\eclipse\workplace\e3-sso\e3-sso-service\target\test-classes;E:\eclipse\workplace\e3-sso\e3-sso-service\target\classes;E:\eclipse\workplace\e3-manager\e3-manager-dao\target\classes;E:\eclipse\workplace\e3-manager\e3-manager-pojo\target\classes;C:\Users\cxx\.m2\repository\org\mybatis\mybatis\3.2.8\mybatis-3.2.8.jar;C:\Users\cxx\.m2\repository\org\mybatis\mybatis-spring\1.2.2\mybatis-spring-1.2.2.jar;C:\Users\cxx\.m2\repository\com\github\miemiedev\mybatis-paginator\1.2.15\mybatis-paginator-1.2.15.jar;C:\Users\cxx\.m2\repository\com\github\pagehelper\pagehelper\3.6.4\pagehelper-3.6.4.jar;C:\Users\cxx\.m2\repository\com\github\jsqlparser\jsqlparser\0.9.1\jsqlparser-0.9.1.jar;C:\Users\cxx\.m2\repository\mysql\mysql-connector-java\5.1.32\mysql-connector-java-5.1.32.jar;C:\Users\cxx\.m2\repository\com\alibaba\druid\1.0.9\druid-1.0.9.jar;C:\Program Files (x86)\Java\jdk1.8.0_151\lib\jconsole.jar;C:\Program Files (x86)\Java\jdk1.8.0_151\lib\tools.jar;E:\eclipse\workplace\e3-sso\e3-sso-interface\target\classes;C:\Users\cxx\.m2\repository\org\springframework\spring-context\4.2.4.RELEASE\spring-context-4.2.4.RELEASE.jar;C:\Users\cxx\.m2\repository\org\springframework\spring-aop\4.2.4.RELEASE\spring-aop-4.2.4.RELEASE.jar;C:\Users\cxx\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\cxx\.m2\repository\org\springframework\spring-core\4.2.4.RELEASE\spring-core-4.2.4.RELEASE.jar;C:\Users\cxx\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\cxx\.m2\repository\org\springframework\spring-expression\4.2.4.RELEASE\spring-expression-4.2.4.RELEASE.jar;C:\Users\cxx\.m2\repository\org\springframework\spring-beans\4.2.4.RELEASE\spring-beans-4.2.4.RELEASE.jar;C:\Users\cxx\.m2\repository\org\springframework\spring-webmvc\4.2.4.RELEASE\spring-webmvc-4.2.4.RELEASE.jar;C:\Users\cxx\.m2\repository\org\springframework\spring-web\4.2.4.RELEASE\spring-web-4.2.4.RELEASE.jar;C:\Users\cxx\.m2\repository\org\springframework\spring-jdbc\4.2.4.RELEASE\spring-jdbc-4.2.4.RELEASE.jar;C:\Users\cxx\.m2\repository\org\springframework\spring-tx\4.2.4.RELEASE\spring-tx-4.2.4.RELEASE.jar;C:\Users\cxx\.m2\repository\org\springframework\spring-aspects\4.2.4.RELEASE\spring-aspects-4.2.4.RELEASE.jar;C:\Users\cxx\.m2\repository\org\aspectj\aspectjweaver\1.8.7\aspectjweaver-1.8.7.jar;C:\Users\cxx\.m2\repository\org\springframework\spring-jms\4.2.4.RELEASE\spring-jms-4.2.4.RELEASE.jar;C:\Users\cxx\.m2\repository\org\springframework\spring-messaging\4.2.4.RELEASE\spring-messaging-4.2.4.RELEASE.jar;C:\Users\cxx\.m2\repository\org\springframework\spring-context-support\4.2.4.RELEASE\spring-context-support-4.2.4.RELEASE.jar;C:\Users\cxx\.m2\repository\org\apache\activemq\activemq-all\5.11.2\activemq-all-5.11.2.jar;C:\Users\cxx\.m2\repository\redis\clients\jedis\2.7.2\jedis-2.7.2.jar;C:\Users\cxx\.m2\repository\org\apache\commons\commons-pool2\2.3\commons-pool2-2.3.jar;C:\Users\cxx\.m2\repository\com\alibaba\dubbo\2.5.3\dubbo-2.5.3.jar;C:\Users\cxx\.m2\repository\org\javassist\javassist\3.15.0-GA\javassist-3.15.0-GA.jar;C:\Users\cxx\.m2\repository\org\apache\zookeeper\zookeeper\3.4.7\zookeeper-3.4.7.jar;C:\Users\cxx\.m2\repository\org\slf4j\slf4j-api\1.6.1\slf4j-api-1.6.1.jar;C:\Users\cxx\.m2\repository\org\slf4j\slf4j-log4j12\1.6.4\slf4j-log4j12-1.6.4.jar;C:\Users\cxx\.m2\repository\log4j\log4j\1.2.16\log4j-1.2.16.jar;C:\Users\cxx\.m2\repository\jline\jline\0.9.94\jline-0.9.94.jar;C:\Users\cxx\.m2\repository\io\netty\netty\3.7.0.Final\netty-3.7.0.Final.jar;C:\Users\cxx\.m2\repository\com\github\sgroschupf\zkclient\0.1\zkclient-0.1.jar;C:\Users\cxx\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\cxx\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;E:\eclipse\workplace\e3-common\target\classes;C:\Users\cxx\.m2\repository\joda-time\joda-time\2.5\joda-time-2.5.jar;C:\Users\cxx\.m2\repository\org\apache\commons\commons-lang3\3.3.2\commons-lang3-3.3.2.jar;C:\Users\cxx\.m2\repository\commons-io\commons-io\1.3.2\commons-io-1.3.2.jar;C:\Users\cxx\.m2\repository\commons-net\commons-net\3.3\commons-net-3.3.jar;C:\Users\cxx\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.4.2\jackson-databind-2.4.2.jar;C:\Users\cxx\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.4.0\jackson-annotations-2.4.0.jar;C:\Users\cxx\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.4.2\jackson-core-2.4.2.jar;C:\Users\cxx\.m2\repository\org\apache\httpcomponents\httpclient\4.3.5\httpclient-4.3.5.jar;C:\Users\cxx\.m2\repository\org\apache\httpcomponents\httpcore\4.3.2\httpcore-4.3.2.jar;C:\Users\cxx\.m2\repository\commons-codec\commons-codec\1.6\commons-codec-1.6.jar;C:\Users\cxx\.m2\repository\org\quartz-scheduler\quartz\2.2.2\quartz-2.2.2.jar;C:\Users\cxx\.m2\repository\c3p0\c3p0\0.9.1.1\c3p0-0.9.1.1.jar;C:\Users\cxx\.m2\repository\fastdfs_client\fastdfs_client\1.25\fastdfs_client-1.25.jar;D:\eclipse\configuration\org.eclipse.osgi\412\0\.cp;D:\eclipse\configuration\org.eclipse.osgi\411\0\.cp
+ [INFO ] 2018-04-23 08:55:57,111        org.apache.zookeeper.ZooKeeper     - Client environment:java.library.path=C:\Program Files (x86)\Java\jdk1.8.0_151\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files (x86)/Java/jdk1.8.0_151/bin/../jre/bin/server;C:/Program Files (x86)/Java/jdk1.8.0_151/bin/../jre/bin;C:/Program Files (x86)/Java/jdk1.8.0_151/bin/../jre/lib/amd64;C:\Python\Scripts\;C:\Python\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Java\jdk1.8.0_151\bin;C:\Program Files (x86)\Java\jdk1.8.0_151\jre\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\apache-maven-3.3.9\bin;E:\hadoop-2.8.3\bin;E:\hadoop-2.8.3\sbin;C:\Program Files (x86)\scala\bin;C:\Program Files (x86)\scala\bin;C:\Users\cxx\Desktop\spark\spark-2.3.0-bin-hadoop2.7\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Users\cxx\AppData\Local\Microsoft\WindowsApps;D:\eclipse;;.
+ [INFO ] 2018-04-23 08:55:57,111        org.apache.zookeeper.ZooKeeper     - Client environment:java.io.tmpdir=C:\Users\cxx\AppData\Local\Temp\
+ [INFO ] 2018-04-23 08:55:57,111        org.apache.zookeeper.ZooKeeper     - Client environment:java.compiler=<NA>
+ [INFO ] 2018-04-23 08:55:57,112        org.apache.zookeeper.ZooKeeper     - Client environment:os.name=Windows 10
+ [INFO ] 2018-04-23 08:55:57,112        org.apache.zookeeper.ZooKeeper     - Client environment:os.arch=amd64
+ [INFO ] 2018-04-23 08:55:57,112        org.apache.zookeeper.ZooKeeper     - Client environment:os.version=10.0
+ [INFO ] 2018-04-23 08:55:57,113        org.apache.zookeeper.ZooKeeper     - Client environment:user.name=cxx
+ [INFO ] 2018-04-23 08:55:57,113        org.apache.zookeeper.ZooKeeper     - Client environment:user.home=C:\Users\cxx
+ [INFO ] 2018-04-23 08:55:57,114        org.apache.zookeeper.ZooKeeper     - Client environment:user.dir=E:\eclipse\workplace\e3-sso\e3-sso-service
+ [INFO ] 2018-04-23 08:55:57,117        org.apache.zookeeper.ZooKeeper     - Initiating client connection, connectString=115.159.126.205:2181 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@4d098f9b
+ [INFO ] 2018-04-23 08:55:57,162       org.apache.zookeeper.ClientCnxn     - Opening socket connection to server 115.159.126.205/115.159.126.205:2181. Will not attempt to authenticate using SASL (unknown error)
+ [INFO ] 2018-04-23 08:55:57,196       org.apache.zookeeper.ClientCnxn     - Socket connection established to 115.159.126.205/115.159.126.205:2181, initiating session
+ [INFO ] 2018-04-23 08:55:57,257       org.apache.zookeeper.ClientCnxn     - Session establishment complete on server 115.159.126.205/115.159.126.205:2181, sessionid = 0x162e87ce2fb0038, negotiated timeout = 30000
+ [INFO ] 2018-04-23 08:55:57,260          org.I0Itec.zkclient.ZkClient     - zookeeper state changed (SyncConnected)
+ [INFO ] 2018-04-23 08:55:57,262 com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry     -  [DUBBO] Register: dubbo://192.168.25.1:20883/cn.e3mall.sso.service.LoginService?anyhost=true&application=e3-sso&dubbo=2.5.3&interface=cn.e3mall.sso.service.LoginService&methods=userLogin&pid=6064&side=provider&timeout=600000&timestamp=1524444946883, dubbo version: 2.5.3, current host: 127.0.0.1
+ [INFO ] 2018-04-23 08:55:57,501 com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry     -  [DUBBO] Subscribe: provider://192.168.25.1:20883/cn.e3mall.sso.service.LoginService?anyhost=true&application=e3-sso&category=configurators&check=false&dubbo=2.5.3&interface=cn.e3mall.sso.service.LoginService&methods=userLogin&pid=6064&side=provider&timeout=600000&timestamp=1524444946883, dubbo version: 2.5.3, current host: 127.0.0.1
+ [INFO ] 2018-04-23 08:55:57,981 com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry     -  [DUBBO] Notify urls for subscribe url provider://192.168.25.1:20883/cn.e3mall.sso.service.LoginService?anyhost=true&application=e3-sso&category=configurators&check=false&dubbo=2.5.3&interface=cn.e3mall.sso.service.LoginService&methods=userLogin&pid=6064&side=provider&timeout=600000&timestamp=1524444946883, urls: [empty://192.168.25.1:20883/cn.e3mall.sso.service.LoginService?anyhost=true&application=e3-sso&category=configurators&check=false&dubbo=2.5.3&interface=cn.e3mall.sso.service.LoginService&methods=userLogin&pid=6064&side=provider&timeout=600000&timestamp=1524444946883], dubbo version: 2.5.3, current host: 127.0.0.1
+ [INFO ] 2018-04-23 08:55:58,047 com.alibaba.dubbo.config.AbstractConfig     -  [DUBBO] The service ready on spring started. service: cn.e3mall.sso.service.RegisterService, dubbo version: 2.5.3, current host: 127.0.0.1
+ [INFO ] 2018-04-23 08:55:58,080 com.alibaba.dubbo.config.AbstractConfig     -  [DUBBO] Export dubbo service cn.e3mall.sso.service.RegisterService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+ [INFO ] 2018-04-23 08:55:58,080 com.alibaba.dubbo.config.AbstractConfig     -  [DUBBO] Export dubbo service cn.e3mall.sso.service.RegisterService to url dubbo://192.168.25.1:20883/cn.e3mall.sso.service.RegisterService?anyhost=true&application=e3-sso&dubbo=2.5.3&interface=cn.e3mall.sso.service.RegisterService&methods=checkData,register&pid=6064&side=provider&timeout=600000&timestamp=1524444958057, dubbo version: 2.5.3, current host: 127.0.0.1
+ [INFO ] 2018-04-23 08:55:58,080 com.alibaba.dubbo.config.AbstractConfig     -  [DUBBO] Register dubbo service cn.e3mall.sso.service.RegisterService url dubbo://192.168.25.1:20883/cn.e3mall.sso.service.RegisterService?anyhost=true&application=e3-sso&dubbo=2.5.3&interface=cn.e3mall.sso.service.RegisterService&methods=checkData,register&pid=6064&side=provider&timeout=600000&timestamp=1524444958057 to registry registry://115.159.126.205:2181/com.alibaba.dubbo.registry.RegistryService?application=e3-sso&dubbo=2.5.3&pid=6064&registry=zookeeper&timestamp=1524444958056, dubbo version: 2.5.3, current host: 127.0.0.1
+ [INFO ] 2018-04-23 08:55:58,083 com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry     -  [DUBBO] Register: dubbo://192.168.25.1:20883/cn.e3mall.sso.service.RegisterService?anyhost=true&application=e3-sso&dubbo=2.5.3&interface=cn.e3mall.sso.service.RegisterService&methods=checkData,register&pid=6064&side=provider&timeout=600000&timestamp=1524444958057, dubbo version: 2.5.3, current host: 127.0.0.1
+ [INFO ] 2018-04-23 08:55:58,303 com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry     -  [DUBBO] Subscribe: provider://192.168.25.1:20883/cn.e3mall.sso.service.RegisterService?anyhost=true&application=e3-sso&category=configurators&check=false&dubbo=2.5.3&interface=cn.e3mall.sso.service.RegisterService&methods=checkData,register&pid=6064&side=provider&timeout=600000&timestamp=1524444958057, dubbo version: 2.5.3, current host: 127.0.0.1
+ [INFO ] 2018-04-23 08:55:58,547 com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry     -  [DUBBO] Notify urls for subscribe url provider://192.168.25.1:20883/cn.e3mall.sso.service.RegisterService?anyhost=true&application=e3-sso&category=configurators&check=false&dubbo=2.5.3&interface=cn.e3mall.sso.service.RegisterService&methods=checkData,register&pid=6064&side=provider&timeout=600000&timestamp=1524444958057, urls: [empty://192.168.25.1:20883/cn.e3mall.sso.service.RegisterService?anyhost=true&application=e3-sso&category=configurators&check=false&dubbo=2.5.3&interface=cn.e3mall.sso.service.RegisterService&methods=checkData,register&pid=6064&side=provider&timeout=600000&timestamp=1524444958057], dubbo version: 2.5.3, current host: 127.0.0.1
+ [INFO ] 2018-04-23 08:55:58,548 com.alibaba.dubbo.config.AbstractConfig     -  [DUBBO] The service ready on spring started. service: cn.e3mall.sso.service.TokenService, dubbo version: 2.5.3, current host: 127.0.0.1
+ [INFO ] 2018-04-23 08:55:58,566 com.alibaba.dubbo.config.AbstractConfig     -  [DUBBO] Export dubbo service cn.e3mall.sso.service.TokenService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+ [INFO ] 2018-04-23 08:55:58,566 com.alibaba.dubbo.config.AbstractConfig     -  [DUBBO] Export dubbo service cn.e3mall.sso.service.TokenService to url dubbo://192.168.25.1:20883/cn.e3mall.sso.service.TokenService?anyhost=true&application=e3-sso&dubbo=2.5.3&interface=cn.e3mall.sso.service.TokenService&methods=getUserByToken&pid=6064&side=provider&timeout=600000&timestamp=1524444958553, dubbo version: 2.5.3, current host: 127.0.0.1
+ [INFO ] 2018-04-23 08:55:58,566 com.alibaba.dubbo.config.AbstractConfig     -  [DUBBO] Register dubbo service cn.e3mall.sso.service.TokenService url dubbo://192.168.25.1:20883/cn.e3mall.sso.service.TokenService?anyhost=true&application=e3-sso&dubbo=2.5.3&interface=cn.e3mall.sso.service.TokenService&methods=getUserByToken&pid=6064&side=provider&timeout=600000&timestamp=1524444958553 to registry registry://115.159.126.205:2181/com.alibaba.dubbo.registry.RegistryService?application=e3-sso&dubbo=2.5.3&pid=6064&registry=zookeeper&timestamp=1524444958553, dubbo version: 2.5.3, current host: 127.0.0.1
+ [INFO ] 2018-04-23 08:55:58,567 com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry     -  [DUBBO] Register: dubbo://192.168.25.1:20883/cn.e3mall.sso.service.TokenService?anyhost=true&application=e3-sso&dubbo=2.5.3&interface=cn.e3mall.sso.service.TokenService&methods=getUserByToken&pid=6064&side=provider&timeout=600000&timestamp=1524444958553, dubbo version: 2.5.3, current host: 127.0.0.1
+ [INFO ] 2018-04-23 08:55:58,827 com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry     -  [DUBBO] Subscribe: provider://192.168.25.1:20883/cn.e3mall.sso.service.TokenService?anyhost=true&application=e3-sso&category=configurators&check=false&dubbo=2.5.3&interface=cn.e3mall.sso.service.TokenService&methods=getUserByToken&pid=6064&side=provider&timeout=600000&timestamp=1524444958553, dubbo version: 2.5.3, current host: 127.0.0.1
+ [INFO ] 2018-04-23 08:55:59,047 com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry     -  [DUBBO] Notify urls for subscribe url provider://192.168.25.1:20883/cn.e3mall.sso.service.TokenService?anyhost=true&application=e3-sso&category=configurators&check=false&dubbo=2.5.3&interface=cn.e3mall.sso.service.TokenService&methods=getUserByToken&pid=6064&side=provider&timeout=600000&timestamp=1524444958553, urls: [empty://192.168.25.1:20883/cn.e3mall.sso.service.TokenService?anyhost=true&application=e3-sso&category=configurators&check=false&dubbo=2.5.3&interface=cn.e3mall.sso.service.TokenService&methods=getUserByToken&pid=6064&side=provider&timeout=600000&timestamp=1524444958553], dubbo version: 2.5.3, current host: 127.0.0.1
+ [WARN ] 2018-04-23 09:14:27,008 com.alibaba.dubbo.remoting.transport.AbstractServer     -  [DUBBO] All clients has discontected from /192.168.25.1:20883. You can graceful shutdown now., dubbo version: 2.5.3, current host: 127.0.0.1
+ [INFO ] 2018-04-23 09:14:27,010 com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol     -  [DUBBO] disconected from /192.168.25.1:56172,url:dubbo://192.168.25.1:20883/cn.e3mall.sso.service.LoginService?anyhost=true&application=e3-sso&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=cn.e3mall.sso.service.LoginService&methods=userLogin&pid=6064&side=provider&timeout=600000&timestamp=1524444946883, dubbo version: 2.5.3, current host: 127.0.0.1
+ [INFO ] 2018-04-23 09:16:58,528 com.alibaba.druid.pool.DruidDataSource     - {dataSource-1} inited
+ [ERROR] 2018-04-23 09:45:42,246 com.alibaba.dubbo.rpc.filter.ExceptionFilter     -  [DUBBO] Got unchecked and undeclared exception which called by 192.168.25.1. service: cn.e3mall.sso.service.TokenService, method: getUserByToken, exception: redis.clients.jedis.exceptions.JedisConnectionException: java.net.SocketTimeoutException: Read timed out, dubbo version: 2.5.3, current host: 127.0.0.1
+ redis.clients.jedis.exceptions.JedisConnectionException: java.net.SocketTimeoutException: Read timed out
+	at redis.clients.util.RedisInputStream.ensureFill(RedisInputStream.java:201)
+	at redis.clients.util.RedisInputStream.readByte(RedisInputStream.java:40)
+	at redis.clients.jedis.Protocol.process(Protocol.java:132)
+	at redis.clients.jedis.Protocol.read(Protocol.java:196)
+	at redis.clients.jedis.Connection.readProtocolWithCheckingBroken(Connection.java:288)
+	at redis.clients.jedis.Connection.getBinaryBulkReply(Connection.java:207)
+	at redis.clients.jedis.Connection.getBulkReply(Connection.java:196)
+	at redis.clients.jedis.Jedis.get(Jedis.java:98)
+	at cn.e3mall.common.jedis.JedisClientPool.get(JedisClientPool.java:31)
+	at cn.e3mall.sso.service.impl.TokenServiceImpl.getUserByToken(TokenServiceImpl.java:32)
+	at sun.reflect.GeneratedMethodAccessor17.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:302)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:281)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:208)
+	at com.sun.proxy.$Proxy20.getUserByToken(Unknown Source)
+	at com.alibaba.dubbo.common.bytecode.Wrapper2.invokeMethod(Wrapper2.java)
+	at com.alibaba.dubbo.rpc.proxy.javassist.JavassistProxyFactory$1.doInvoke(JavassistProxyFactory.java:46)
+	at com.alibaba.dubbo.rpc.proxy.AbstractProxyInvoker.invoke(AbstractProxyInvoker.java:72)
+	at com.alibaba.dubbo.rpc.protocol.InvokerWrapper.invoke(InvokerWrapper.java:53)
+	at com.alibaba.dubbo.rpc.filter.ExceptionFilter.invoke(ExceptionFilter.java:64)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.monitor.support.MonitorFilter.invoke(MonitorFilter.java:75)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.TimeoutFilter.invoke(TimeoutFilter.java:42)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.filter.TraceFilter.invoke(TraceFilter.java:78)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.ContextFilter.invoke(ContextFilter.java:60)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.GenericFilter.invoke(GenericFilter.java:112)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.ClassLoaderFilter.invoke(ClassLoaderFilter.java:38)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.EchoFilter.invoke(EchoFilter.java:38)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1.reply(DubboProtocol.java:108)
+	at com.alibaba.dubbo.remoting.exchange.support.header.HeaderExchangeHandler.handleRequest(HeaderExchangeHandler.java:84)
+	at com.alibaba.dubbo.remoting.exchange.support.header.HeaderExchangeHandler.received(HeaderExchangeHandler.java:170)
+	at com.alibaba.dubbo.remoting.transport.DecodeHandler.received(DecodeHandler.java:52)
+	at com.alibaba.dubbo.remoting.transport.dispatcher.ChannelEventRunnable.run(ChannelEventRunnable.java:82)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.net.SocketInputStream.read(SocketInputStream.java:127)
+	at redis.clients.util.RedisInputStream.ensureFill(RedisInputStream.java:195)
+	... 51 more
+[INFO ] 2018-04-23 09:53:30,697 com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol     -  [DUBBO] disconected from /192.168.25.1:56350,url:dubbo://192.168.25.1:20883/cn.e3mall.sso.service.LoginService?anyhost=true&application=e3-sso&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=cn.e3mall.sso.service.LoginService&methods=userLogin&pid=6064&side=provider&timeout=600000&timestamp=1524444946883, dubbo version: 2.5.3, current host: 127.0.0.1
+ [INFO ] 2018-04-23 09:58:52,252 com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol     -  [DUBBO] disconected from /192.168.25.1:65532,url:dubbo://192.168.25.1:20883/cn.e3mall.sso.service.LoginService?anyhost=true&application=e3-sso&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=cn.e3mall.sso.service.LoginService&methods=userLogin&pid=6064&side=provider&timeout=600000&timestamp=1524444946883, dubbo version: 2.5.3, current host: 127.0.0.1
+ [INFO ] 2018-04-23 10:07:30,273 com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol     -  [DUBBO] disconected from /192.168.25.1:56515,url:dubbo://192.168.25.1:20883/cn.e3mall.sso.service.LoginService?anyhost=true&application=e3-sso&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=cn.e3mall.sso.service.LoginService&methods=userLogin&pid=6064&side=provider&timeout=600000&timestamp=1524444946883, dubbo version: 2.5.3, current host: 127.0.0.1
+ [ERROR] 2018-04-23 10:35:11,227 com.alibaba.dubbo.rpc.filter.ExceptionFilter     -  [DUBBO] Got unchecked and undeclared exception which called by 192.168.25.1. service: cn.e3mall.sso.service.TokenService, method: getUserByToken, exception: redis.clients.jedis.exceptions.JedisConnectionException: java.net.SocketTimeoutException: Read timed out, dubbo version: 2.5.3, current host: 127.0.0.1
+ redis.clients.jedis.exceptions.JedisConnectionException: java.net.SocketTimeoutException: Read timed out
+	at redis.clients.util.RedisInputStream.ensureFill(RedisInputStream.java:201)
+	at redis.clients.util.RedisInputStream.readByte(RedisInputStream.java:40)
+	at redis.clients.jedis.Protocol.process(Protocol.java:132)
+	at redis.clients.jedis.Protocol.read(Protocol.java:196)
+	at redis.clients.jedis.Connection.readProtocolWithCheckingBroken(Connection.java:288)
+	at redis.clients.jedis.Connection.getBinaryBulkReply(Connection.java:207)
+	at redis.clients.jedis.Connection.getBulkReply(Connection.java:196)
+	at redis.clients.jedis.Jedis.get(Jedis.java:98)
+	at cn.e3mall.common.jedis.JedisClientPool.get(JedisClientPool.java:31)
+	at cn.e3mall.sso.service.impl.TokenServiceImpl.getUserByToken(TokenServiceImpl.java:32)
+	at sun.reflect.GeneratedMethodAccessor17.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:302)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:281)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:208)
+	at com.sun.proxy.$Proxy20.getUserByToken(Unknown Source)
+	at com.alibaba.dubbo.common.bytecode.Wrapper2.invokeMethod(Wrapper2.java)
+	at com.alibaba.dubbo.rpc.proxy.javassist.JavassistProxyFactory$1.doInvoke(JavassistProxyFactory.java:46)
+	at com.alibaba.dubbo.rpc.proxy.AbstractProxyInvoker.invoke(AbstractProxyInvoker.java:72)
+	at com.alibaba.dubbo.rpc.protocol.InvokerWrapper.invoke(InvokerWrapper.java:53)
+	at com.alibaba.dubbo.rpc.filter.ExceptionFilter.invoke(ExceptionFilter.java:64)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.monitor.support.MonitorFilter.invoke(MonitorFilter.java:75)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.TimeoutFilter.invoke(TimeoutFilter.java:42)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.filter.TraceFilter.invoke(TraceFilter.java:78)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.ContextFilter.invoke(ContextFilter.java:60)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.GenericFilter.invoke(GenericFilter.java:112)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.ClassLoaderFilter.invoke(ClassLoaderFilter.java:38)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.EchoFilter.invoke(EchoFilter.java:38)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1.reply(DubboProtocol.java:108)
+	at com.alibaba.dubbo.remoting.exchange.support.header.HeaderExchangeHandler.handleRequest(HeaderExchangeHandler.java:84)
+	at com.alibaba.dubbo.remoting.exchange.support.header.HeaderExchangeHandler.received(HeaderExchangeHandler.java:170)
+	at com.alibaba.dubbo.remoting.transport.DecodeHandler.received(DecodeHandler.java:52)
+	at com.alibaba.dubbo.remoting.transport.dispatcher.ChannelEventRunnable.run(ChannelEventRunnable.java:82)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.net.SocketInputStream.read(SocketInputStream.java:127)
+	at redis.clients.util.RedisInputStream.ensureFill(RedisInputStream.java:195)
+	... 51 more
+[ERROR] 2018-04-23 10:35:16,457 com.alibaba.dubbo.rpc.filter.ExceptionFilter     -  [DUBBO] Got unchecked and undeclared exception which called by 192.168.25.1. service: cn.e3mall.sso.service.TokenService, method: getUserByToken, exception: redis.clients.jedis.exceptions.JedisConnectionException: java.net.SocketTimeoutException: Read timed out, dubbo version: 2.5.3, current host: 127.0.0.1
+ redis.clients.jedis.exceptions.JedisConnectionException: java.net.SocketTimeoutException: Read timed out
+	at redis.clients.util.RedisInputStream.ensureFill(RedisInputStream.java:201)
+	at redis.clients.util.RedisInputStream.readByte(RedisInputStream.java:40)
+	at redis.clients.jedis.Protocol.process(Protocol.java:132)
+	at redis.clients.jedis.Protocol.read(Protocol.java:196)
+	at redis.clients.jedis.Connection.readProtocolWithCheckingBroken(Connection.java:288)
+	at redis.clients.jedis.Connection.getBinaryBulkReply(Connection.java:207)
+	at redis.clients.jedis.Connection.getBulkReply(Connection.java:196)
+	at redis.clients.jedis.Jedis.get(Jedis.java:98)
+	at cn.e3mall.common.jedis.JedisClientPool.get(JedisClientPool.java:31)
+	at cn.e3mall.sso.service.impl.TokenServiceImpl.getUserByToken(TokenServiceImpl.java:32)
+	at sun.reflect.GeneratedMethodAccessor17.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:302)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:281)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:208)
+	at com.sun.proxy.$Proxy20.getUserByToken(Unknown Source)
+	at com.alibaba.dubbo.common.bytecode.Wrapper2.invokeMethod(Wrapper2.java)
+	at com.alibaba.dubbo.rpc.proxy.javassist.JavassistProxyFactory$1.doInvoke(JavassistProxyFactory.java:46)
+	at com.alibaba.dubbo.rpc.proxy.AbstractProxyInvoker.invoke(AbstractProxyInvoker.java:72)
+	at com.alibaba.dubbo.rpc.protocol.InvokerWrapper.invoke(InvokerWrapper.java:53)
+	at com.alibaba.dubbo.rpc.filter.ExceptionFilter.invoke(ExceptionFilter.java:64)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.monitor.support.MonitorFilter.invoke(MonitorFilter.java:75)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.TimeoutFilter.invoke(TimeoutFilter.java:42)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.filter.TraceFilter.invoke(TraceFilter.java:78)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.ContextFilter.invoke(ContextFilter.java:60)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.GenericFilter.invoke(GenericFilter.java:112)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.ClassLoaderFilter.invoke(ClassLoaderFilter.java:38)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.EchoFilter.invoke(EchoFilter.java:38)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1.reply(DubboProtocol.java:108)
+	at com.alibaba.dubbo.remoting.exchange.support.header.HeaderExchangeHandler.handleRequest(HeaderExchangeHandler.java:84)
+	at com.alibaba.dubbo.remoting.exchange.support.header.HeaderExchangeHandler.received(HeaderExchangeHandler.java:170)
+	at com.alibaba.dubbo.remoting.transport.DecodeHandler.received(DecodeHandler.java:52)
+	at com.alibaba.dubbo.remoting.transport.dispatcher.ChannelEventRunnable.run(ChannelEventRunnable.java:82)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.net.SocketInputStream.read(SocketInputStream.java:127)
+	at redis.clients.util.RedisInputStream.ensureFill(RedisInputStream.java:195)
+	... 51 more
+[INFO ] 2018-04-23 11:21:06,291 com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol     -  [DUBBO] disconected from /192.168.25.1:49810,url:dubbo://192.168.25.1:20883/cn.e3mall.sso.service.LoginService?anyhost=true&application=e3-sso&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=cn.e3mall.sso.service.LoginService&methods=userLogin&pid=6064&side=provider&timeout=600000&timestamp=1524444946883, dubbo version: 2.5.3, current host: 127.0.0.1
+ [INFO ] 2018-04-23 11:21:09,452 com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol     -  [DUBBO] disconected from /192.168.25.1:56463,url:dubbo://192.168.25.1:20883/cn.e3mall.sso.service.LoginService?anyhost=true&application=e3-sso&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=cn.e3mall.sso.service.LoginService&methods=userLogin&pid=6064&side=provider&timeout=600000&timestamp=1524444946883, dubbo version: 2.5.3, current host: 127.0.0.1
+ [ERROR] 2018-04-23 11:21:54,923 com.alibaba.dubbo.rpc.filter.ExceptionFilter     -  [DUBBO] Got unchecked and undeclared exception which called by 192.168.25.1. service: cn.e3mall.sso.service.TokenService, method: getUserByToken, exception: redis.clients.jedis.exceptions.JedisConnectionException: java.net.SocketTimeoutException: Read timed out, dubbo version: 2.5.3, current host: 127.0.0.1
+ redis.clients.jedis.exceptions.JedisConnectionException: java.net.SocketTimeoutException: Read timed out
+	at redis.clients.util.RedisInputStream.ensureFill(RedisInputStream.java:201)
+	at redis.clients.util.RedisInputStream.readByte(RedisInputStream.java:40)
+	at redis.clients.jedis.Protocol.process(Protocol.java:132)
+	at redis.clients.jedis.Protocol.read(Protocol.java:196)
+	at redis.clients.jedis.Connection.readProtocolWithCheckingBroken(Connection.java:288)
+	at redis.clients.jedis.Connection.getBinaryBulkReply(Connection.java:207)
+	at redis.clients.jedis.Connection.getBulkReply(Connection.java:196)
+	at redis.clients.jedis.Jedis.get(Jedis.java:98)
+	at cn.e3mall.common.jedis.JedisClientPool.get(JedisClientPool.java:31)
+	at cn.e3mall.sso.service.impl.TokenServiceImpl.getUserByToken(TokenServiceImpl.java:32)
+	at sun.reflect.GeneratedMethodAccessor17.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:302)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:281)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:208)
+	at com.sun.proxy.$Proxy20.getUserByToken(Unknown Source)
+	at com.alibaba.dubbo.common.bytecode.Wrapper2.invokeMethod(Wrapper2.java)
+	at com.alibaba.dubbo.rpc.proxy.javassist.JavassistProxyFactory$1.doInvoke(JavassistProxyFactory.java:46)
+	at com.alibaba.dubbo.rpc.proxy.AbstractProxyInvoker.invoke(AbstractProxyInvoker.java:72)
+	at com.alibaba.dubbo.rpc.protocol.InvokerWrapper.invoke(InvokerWrapper.java:53)
+	at com.alibaba.dubbo.rpc.filter.ExceptionFilter.invoke(ExceptionFilter.java:64)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.monitor.support.MonitorFilter.invoke(MonitorFilter.java:75)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.TimeoutFilter.invoke(TimeoutFilter.java:42)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.filter.TraceFilter.invoke(TraceFilter.java:78)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.ContextFilter.invoke(ContextFilter.java:60)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.GenericFilter.invoke(GenericFilter.java:112)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.ClassLoaderFilter.invoke(ClassLoaderFilter.java:38)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.EchoFilter.invoke(EchoFilter.java:38)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1.reply(DubboProtocol.java:108)
+	at com.alibaba.dubbo.remoting.exchange.support.header.HeaderExchangeHandler.handleRequest(HeaderExchangeHandler.java:84)
+	at com.alibaba.dubbo.remoting.exchange.support.header.HeaderExchangeHandler.received(HeaderExchangeHandler.java:170)
+	at com.alibaba.dubbo.remoting.transport.DecodeHandler.received(DecodeHandler.java:52)
+	at com.alibaba.dubbo.remoting.transport.dispatcher.ChannelEventRunnable.run(ChannelEventRunnable.java:82)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.net.SocketInputStream.read(SocketInputStream.java:127)
+	at redis.clients.util.RedisInputStream.ensureFill(RedisInputStream.java:195)
+	... 51 more
+[WARN ] 2018-04-23 12:59:54,726 com.alibaba.dubbo.remoting.transport.AbstractServer     -  [DUBBO] All clients has discontected from /192.168.25.1:20883. You can graceful shutdown now., dubbo version: 2.5.3, current host: 127.0.0.1
+ [INFO ] 2018-04-23 12:59:54,779 com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol     -  [DUBBO] disconected from /192.168.25.1:49540,url:dubbo://192.168.25.1:20883/cn.e3mall.sso.service.LoginService?anyhost=true&application=e3-sso&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=cn.e3mall.sso.service.LoginService&methods=userLogin&pid=6064&side=provider&timeout=600000&timestamp=1524444946883, dubbo version: 2.5.3, current host: 127.0.0.1
+ [WARN ] 2018-04-23 13:00:34,556       org.apache.zookeeper.ClientCnxn     - Session 0x162e87ce2fb0038 for server 115.159.126.205/115.159.126.205:2181, unexpected error, closing socket connection and attempting reconnect
+ java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doIO(ClientCnxnSocketNIO.java:68)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:366)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+[INFO ] 2018-04-23 13:00:34,658          org.I0Itec.zkclient.ZkClient     - zookeeper state changed (Disconnected)
+ [INFO ] 2018-04-23 13:00:36,404       org.apache.zookeeper.ClientCnxn     - Opening socket connection to server 115.159.126.205/115.159.126.205:2181. Will not attempt to authenticate using SASL (unknown error)
+ [INFO ] 2018-04-23 13:00:36,429       org.apache.zookeeper.ClientCnxn     - Socket connection established to 115.159.126.205/115.159.126.205:2181, initiating session
+ [WARN ] 2018-04-23 13:00:36,683       org.apache.zookeeper.ClientCnxn     - Unable to reconnect to ZooKeeper service, session 0x162e87ce2fb0038 has expired
+ [INFO ] 2018-04-23 13:00:36,683       org.apache.zookeeper.ClientCnxn     - Unable to reconnect to ZooKeeper service, session 0x162e87ce2fb0038 has expired, closing socket connection
+ [INFO ] 2018-04-23 13:00:36,684          org.I0Itec.zkclient.ZkClient     - zookeeper state changed (Expired)
+ [INFO ] 2018-04-23 13:00:36,685        org.apache.zookeeper.ZooKeeper     - Initiating client connection, connectString=115.159.126.205:2181 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@4d098f9b
+ [INFO ] 2018-04-23 13:00:36,688 com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry     -  [DUBBO] Recover register url [dubbo://192.168.25.1:20883/cn.e3mall.sso.service.LoginService?anyhost=true&application=e3-sso&dubbo=2.5.3&interface=cn.e3mall.sso.service.LoginService&methods=userLogin&pid=6064&side=provider&timeout=600000&timestamp=1524444946883, dubbo://192.168.25.1:20883/cn.e3mall.sso.service.TokenService?anyhost=true&application=e3-sso&dubbo=2.5.3&interface=cn.e3mall.sso.service.TokenService&methods=getUserByToken&pid=6064&side=provider&timeout=600000&timestamp=1524444958553, dubbo://192.168.25.1:20883/cn.e3mall.sso.service.RegisterService?anyhost=true&application=e3-sso&dubbo=2.5.3&interface=cn.e3mall.sso.service.RegisterService&methods=checkData,register&pid=6064&side=provider&timeout=600000&timestamp=1524444958057], dubbo version: 2.5.3, current host: 127.0.0.1
+ [INFO ] 2018-04-23 13:00:36,700 com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry     -  [DUBBO] Recover subscribe url [provider://192.168.25.1:20883/cn.e3mall.sso.service.LoginService?anyhost=true&application=e3-sso&category=configurators&check=false&dubbo=2.5.3&interface=cn.e3mall.sso.service.LoginService&methods=userLogin&pid=6064&side=provider&timeout=600000&timestamp=1524444946883, provider://192.168.25.1:20883/cn.e3mall.sso.service.TokenService?anyhost=true&application=e3-sso&category=configurators&check=false&dubbo=2.5.3&interface=cn.e3mall.sso.service.TokenService&methods=getUserByToken&pid=6064&side=provider&timeout=600000&timestamp=1524444958553, provider://192.168.25.1:20883/cn.e3mall.sso.service.RegisterService?anyhost=true&application=e3-sso&category=configurators&check=false&dubbo=2.5.3&interface=cn.e3mall.sso.service.RegisterService&methods=checkData,register&pid=6064&side=provider&timeout=600000&timestamp=1524444958057], dubbo version: 2.5.3, current host: 127.0.0.1
+ [INFO ] 2018-04-23 13:00:36,704       org.apache.zookeeper.ClientCnxn     - Opening socket connection to server 115.159.126.205/115.159.126.205:2181. Will not attempt to authenticate using SASL (unknown error)
+ [INFO ] 2018-04-23 13:00:36,718       org.apache.zookeeper.ClientCnxn     - EventThread shut down for session: 0x162e87ce2fb0038
+ [INFO ] 2018-04-23 13:00:36,738       org.apache.zookeeper.ClientCnxn     - Socket connection established to 115.159.126.205/115.159.126.205:2181, initiating session
+ [INFO ] 2018-04-23 13:00:36,990       org.apache.zookeeper.ClientCnxn     - Session establishment complete on server 115.159.126.205/115.159.126.205:2181, sessionid = 0x162e87ce2fb0049, negotiated timeout = 30000
+ [INFO ] 2018-04-23 13:00:36,990          org.I0Itec.zkclient.ZkClient     - zookeeper state changed (SyncConnected)
+ [INFO ] 2018-04-23 13:00:37,065 com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry     -  [DUBBO] Notify urls for subscribe url provider://192.168.25.1:20883/cn.e3mall.sso.service.RegisterService?anyhost=true&application=e3-sso&category=configurators&check=false&dubbo=2.5.3&interface=cn.e3mall.sso.service.RegisterService&methods=checkData,register&pid=6064&side=provider&timeout=600000&timestamp=1524444958057, urls: [empty://192.168.25.1:20883/cn.e3mall.sso.service.RegisterService?anyhost=true&application=e3-sso&category=configurators&check=false&dubbo=2.5.3&interface=cn.e3mall.sso.service.RegisterService&methods=checkData,register&pid=6064&side=provider&timeout=600000&timestamp=1524444958057], dubbo version: 2.5.3, current host: 127.0.0.1
+ [INFO ] 2018-04-23 13:00:37,353 com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry     -  [DUBBO] Notify urls for subscribe url provider://192.168.25.1:20883/cn.e3mall.sso.service.LoginService?anyhost=true&application=e3-sso&category=configurators&check=false&dubbo=2.5.3&interface=cn.e3mall.sso.service.LoginService&methods=userLogin&pid=6064&side=provider&timeout=600000&timestamp=1524444946883, urls: [empty://192.168.25.1:20883/cn.e3mall.sso.service.LoginService?anyhost=true&application=e3-sso&category=configurators&check=false&dubbo=2.5.3&interface=cn.e3mall.sso.service.LoginService&methods=userLogin&pid=6064&side=provider&timeout=600000&timestamp=1524444946883], dubbo version: 2.5.3, current host: 127.0.0.1
+ [INFO ] 2018-04-23 13:00:37,633 com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry     -  [DUBBO] Notify urls for subscribe url provider://192.168.25.1:20883/cn.e3mall.sso.service.TokenService?anyhost=true&application=e3-sso&category=configurators&check=false&dubbo=2.5.3&interface=cn.e3mall.sso.service.TokenService&methods=getUserByToken&pid=6064&side=provider&timeout=600000&timestamp=1524444958553, urls: [empty://192.168.25.1:20883/cn.e3mall.sso.service.TokenService?anyhost=true&application=e3-sso&category=configurators&check=false&dubbo=2.5.3&interface=cn.e3mall.sso.service.TokenService&methods=getUserByToken&pid=6064&side=provider&timeout=600000&timestamp=1524444958553], dubbo version: 2.5.3, current host: 127.0.0.1
+ [INFO ] 2018-04-23 13:00:38,181 com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry     -  [DUBBO] Retry register [dubbo://192.168.25.1:20883/cn.e3mall.sso.service.LoginService?anyhost=true&application=e3-sso&dubbo=2.5.3&interface=cn.e3mall.sso.service.LoginService&methods=userLogin&pid=6064&side=provider&timeout=600000&timestamp=1524444946883, dubbo://192.168.25.1:20883/cn.e3mall.sso.service.TokenService?anyhost=true&application=e3-sso&dubbo=2.5.3&interface=cn.e3mall.sso.service.TokenService&methods=getUserByToken&pid=6064&side=provider&timeout=600000&timestamp=1524444958553, dubbo://192.168.25.1:20883/cn.e3mall.sso.service.RegisterService?anyhost=true&application=e3-sso&dubbo=2.5.3&interface=cn.e3mall.sso.service.RegisterService&methods=checkData,register&pid=6064&side=provider&timeout=600000&timestamp=1524444958057], dubbo version: 2.5.3, current host: 127.0.0.1
+ [INFO ] 2018-04-23 13:00:38,944 com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry     -  [DUBBO] Retry subscribe {provider://192.168.25.1:20883/cn.e3mall.sso.service.LoginService?anyhost=true&application=e3-sso&category=configurators&check=false&dubbo=2.5.3&interface=cn.e3mall.sso.service.LoginService&methods=userLogin&pid=6064&side=provider&timeout=600000&timestamp=1524444946883=[com.alibaba.dubbo.registry.integration.RegistryProtocol$OverrideListener@1991f767], provider://192.168.25.1:20883/cn.e3mall.sso.service.TokenService?anyhost=true&application=e3-sso&category=configurators&check=false&dubbo=2.5.3&interface=cn.e3mall.sso.service.TokenService&methods=getUserByToken&pid=6064&side=provider&timeout=600000&timestamp=1524444958553=[com.alibaba.dubbo.registry.integration.RegistryProtocol$OverrideListener@2a39fe6a], provider://192.168.25.1:20883/cn.e3mall.sso.service.RegisterService?anyhost=true&application=e3-sso&category=configurators&check=false&dubbo=2.5.3&interface=cn.e3mall.sso.service.RegisterService&methods=checkData,register&pid=6064&side=provider&timeout=600000&timestamp=1524444958057=[com.alibaba.dubbo.registry.integration.RegistryProtocol$OverrideListener@4648ce9]}, dubbo version: 2.5.3, current host: 127.0.0.1
+ [INFO ] 2018-04-23 13:00:39,195 com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry     -  [DUBBO] Notify urls for subscribe url provider://192.168.25.1:20883/cn.e3mall.sso.service.LoginService?anyhost=true&application=e3-sso&category=configurators&check=false&dubbo=2.5.3&interface=cn.e3mall.sso.service.LoginService&methods=userLogin&pid=6064&side=provider&timeout=600000&timestamp=1524444946883, urls: [empty://192.168.25.1:20883/cn.e3mall.sso.service.LoginService?anyhost=true&application=e3-sso&category=configurators&check=false&dubbo=2.5.3&interface=cn.e3mall.sso.service.LoginService&methods=userLogin&pid=6064&side=provider&timeout=600000&timestamp=1524444946883], dubbo version: 2.5.3, current host: 127.0.0.1
+ [INFO ] 2018-04-23 13:00:39,670 com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry     -  [DUBBO] Notify urls for subscribe url provider://192.168.25.1:20883/cn.e3mall.sso.service.TokenService?anyhost=true&application=e3-sso&category=configurators&check=false&dubbo=2.5.3&interface=cn.e3mall.sso.service.TokenService&methods=getUserByToken&pid=6064&side=provider&timeout=600000&timestamp=1524444958553, urls: [empty://192.168.25.1:20883/cn.e3mall.sso.service.TokenService?anyhost=true&application=e3-sso&category=configurators&check=false&dubbo=2.5.3&interface=cn.e3mall.sso.service.TokenService&methods=getUserByToken&pid=6064&side=provider&timeout=600000&timestamp=1524444958553], dubbo version: 2.5.3, current host: 127.0.0.1
+ [INFO ] 2018-04-23 13:00:39,912 com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry     -  [DUBBO] Notify urls for subscribe url provider://192.168.25.1:20883/cn.e3mall.sso.service.RegisterService?anyhost=true&application=e3-sso&category=configurators&check=false&dubbo=2.5.3&interface=cn.e3mall.sso.service.RegisterService&methods=checkData,register&pid=6064&side=provider&timeout=600000&timestamp=1524444958057, urls: [empty://192.168.25.1:20883/cn.e3mall.sso.service.RegisterService?anyhost=true&application=e3-sso&category=configurators&check=false&dubbo=2.5.3&interface=cn.e3mall.sso.service.RegisterService&methods=checkData,register&pid=6064&side=provider&timeout=600000&timestamp=1524444958057], dubbo version: 2.5.3, current host: 127.0.0.1
+ [WARN ] 2018-04-23 16:24:20,639 com.alibaba.dubbo.remoting.transport.AbstractServer     -  [DUBBO] All clients has discontected from /192.168.25.1:20883. You can graceful shutdown now., dubbo version: 2.5.3, current host: 127.0.0.1
+ [INFO ] 2018-04-23 16:24:20,641 com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol     -  [DUBBO] disconected from /192.168.25.1:50750,url:dubbo://192.168.25.1:20883/cn.e3mall.sso.service.LoginService?anyhost=true&application=e3-sso&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=cn.e3mall.sso.service.LoginService&methods=userLogin&pid=6064&side=provider&timeout=600000&timestamp=1524444946883, dubbo version: 2.5.3, current host: 127.0.0.1
+ 

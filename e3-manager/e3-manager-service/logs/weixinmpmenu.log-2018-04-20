@@ -1,0 +1,4 @@
+[INFO ] 2018-04-20 00:14:39,353 com.alibaba.druid.pool.DruidDataSource     - {dataSource-1} inited
+ [WARN ] 2018-04-20 00:24:51,193 com.alibaba.dubbo.remoting.transport.AbstractServer     -  [DUBBO] All clients has discontected from /192.168.25.1:20880. You can graceful shutdown now., dubbo version: 2.5.3, current host: 127.0.0.1
+ [INFO ] 2018-04-20 00:24:51,195 com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol     -  [DUBBO] disconected from /192.168.25.1:62491,url:dubbo://192.168.25.1:20880/cn.e3mall.service.ItemService?anyhost=true&application=e3-manager&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=cn.e3mall.service.ItemService&methods=reshelfItem,addItem,getItemList,delItem,instockItem,getItemById,updateItem,getItemDescById&pid=10072&side=provider&timeout=600000&timestamp=1524152607474, dubbo version: 2.5.3, current host: 127.0.0.1
+ 
